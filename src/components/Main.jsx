@@ -1,6 +1,9 @@
 import React from 'react'
 import styles from '../style';
 import { ResponsiveContainer,PieChart, Pie, Cell, Tooltip, Legend, Label} from 'recharts';
+import LearningDis from "./LearningDis";
+import Logic  from './Logic';
+import Write from './Spelling';
 
 const Main = () => {
   const COLORS = ["#8884d8", "#82ca9d", "#FFBB28", "#FF8042", "#AF19FF","#4287f5","#656b75"];
@@ -47,9 +50,16 @@ const RADIAN = Math.PI / 180;
       </section>
       <div className='text-white'>
         <h1 className='text-white text-5xl'>TESTS</h1>
-        <h1 className='text-xl'>Learning Test</h1>
-        <h1 className='text-xl'>Reading Test</h1>
-        <h1 className='text-xl'>Math and Logic Test</h1>
+        <ul className='text-xl'>
+          <li><h1 className='text-xl'>Learning Test</h1><LearningDis/></li>
+          <li><h1 className='text-xl'>Reading Test</h1><Logic/></li>
+          <li><h1 className='text-xl'>Math and Logic Test</h1><Write/></li>
+        </ul>
+        
+
+ 
+        
+        
       </div>
       </div>
   )
